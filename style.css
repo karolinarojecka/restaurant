@@ -15,5 +15,31 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+/*banner*/
+.banner a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.472);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.banner:hover {
+    transform: scale(1.05);
+}
+
 
