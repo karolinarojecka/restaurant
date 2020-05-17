@@ -6,3 +6,14 @@ html {
     box-sizing: inherit;
 }
 
+
+/*background*/
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
