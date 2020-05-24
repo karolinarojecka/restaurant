@@ -43,6 +43,38 @@ body {
 }
 
 
+
+
+
+
+/*navigation*/
+.navigation {
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.7em;
+    text-transform: uppercase;
+}
+
+.navigation__link:hover {
+    border-bottom: 0.5px solid #ffffff85;
+}
+
+@media (min-width: 426) {
+    .navigation
+}
+
+
 /*about-us*/
 .container__about-us {
     width: 100vw;
@@ -71,9 +103,6 @@ body {
     font-size: 13px;
 }
 
-
-
-
 @media (min-width: 769px) {
     .about-us__article {
         width: 60vw;
@@ -93,3 +122,6 @@ body {
         background-size: cover;
     }
 }
+
+
+
