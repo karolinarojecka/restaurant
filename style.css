@@ -56,25 +56,40 @@ body {
 }
 
 .about-us__article {
-    width: 60vw;
+    text-align: justify;
 }
 
 .about-us__header {
-    font-size: 30px;
     text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
 }
 
 .about-us__paragraph {
     line-height: 1.5;
     color: #585858;
-    font-size: 18px;
+    font-size: 13px;
 }
 
-.about-us__picture {
-    background-image: url(about-us.jpg);
-    margin: 30px;
-    height: calc(100% - 100px);
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
+
+
+
+@media (min-width: 769px) {
+    .about-us__article {
+        width: 60vw;
+    }
+    .about-us__header {
+        font-size: 30px;
+    }
+    .about-us__paragraph {
+        font-size: 18px;
+    }
+    .about-us__picture {
+        background-image: url(about-us.jpg);
+        margin: 30px;
+        height: calc(100% - 100px);
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
 }
