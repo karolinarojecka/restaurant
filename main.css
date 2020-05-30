@@ -1,0 +1,160 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*background*/
+.main {
+    height: 100vh;
+    background-image: url(background-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*banner*/
+.banner a {
+    text-decoration: none;
+}
+
+.banner {
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.472);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: transform 0.1s ease;
+}
+
+.banner:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+/*navigation*/
+.header {
+    height: 50px;
+    background-color: #00000081;   
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header__icon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 17px;
+    right: 17px;
+    z-index: -1;
+}
+
+.navigation {
+    display: none;
+}
+
+
+/*navigation after click*/
+.navigation--open {
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.navigation__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.7em;
+    text-transform: uppercase;
+}
+
+.navigation__link:hover {
+    border-bottom: 0.5px solid #ffffff85;
+}
+
+@media (min-width: 426) {
+    .navigation{
+
+    }
+
+    .header__icon {
+        display: none;
+    }
+}
+
+
+
+
+
+/*about-us*/
+.container__about-us {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.about-us {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+}
+
+.about-us__article {
+    text-align: justify;
+}
+
+.about-us__header {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-us__paragraph {
+    line-height: 1.5;
+    color: #585858;
+    font-size: 13px;
+}
+
+@media (min-width: 769px) {
+    .about-us__article {
+        width: 60vw;
+    }
+    .about-us__header {
+        font-size: 30px;
+    }
+    .about-us__paragraph {
+        font-size: 18px;
+    }
+    .about-us__picture {
+        background-image: url(about-us.jpg);
+        margin: 30px;
+        height: calc(100% - 100px);
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+
+

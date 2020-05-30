@@ -1,0 +1,25 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Project_1",
+  "main": "main.js",
+  "scripts": {
+    "scss": "npx node-sass -w scss/style.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolinarojecka/restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karolinarojecka/restaurant/issues"
+  },
+  "homepage": "https://github.com/karolinarojecka/restaurant#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1"
+  }
+}
