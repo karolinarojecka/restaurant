@@ -51,8 +51,32 @@ body {
   right: 17px;
   z-index: -1; }
 
+.header__logo {
+  display: none; }
+
 .navigation {
   display: none; }
+
+@media (min-width: 1024px) {
+  .header {
+    height: 70px;
+    display: flex; }
+    .header__logo {
+      display: block;
+      width: 90px;
+      margin-top: 4px;
+      margin-left: 50px; }
+    .header__icon {
+      display: none; }
+  .navigation {
+    right: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end; }
+    .navigation__link {
+      padding: 20px; }
+    .navigation__link--social {
+      display: none; } }
 
 /*navigation after click*/
 .navigation--open {

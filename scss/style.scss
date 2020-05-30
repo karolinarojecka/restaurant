@@ -1,3 +1,11 @@
+$desktop: 1024px;
+
+
+
+
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -66,10 +74,41 @@ body {
     z-index: -1;
 }
 
+.header__logo {
+    display: none;
+}
+
 .navigation {
     display: none;
 }
 
+@media (min-width: $desktop) {
+    .header {
+        height: 70px;
+        display: flex;
+        &__logo {
+            display: block;
+            width: 90px;
+            margin-top: 4px;
+            margin-left: 50px;
+        }
+        &__icon {
+            display: none;
+        }
+    }
+    .navigation {
+        right: 10px;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        &__link {
+            padding: 20px;
+        }
+        &__link--social {
+            display: none;
+        }
+    }
+}
 
 /*navigation after click*/
 .navigation--open {
